@@ -1,4 +1,4 @@
-FROM golang:1.19.10-alpine AS builder
+FROM golang:1.22.0-alpine AS builder
 
 # Copy the code from the host and compile it
 WORKDIR $GOPATH/src/github.com/RedisAI/aibench
@@ -6,7 +6,7 @@ COPY . ./
 RUN apk add --no-cache git make bash
 RUN make all
 
-FROM golang:1.19.10-alpine
+FROM golang:1.22.0-alpine
 # install bash shell
 RUN apk add --update bash && rm -rf /var/cache/apk/*
 
