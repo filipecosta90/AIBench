@@ -15,7 +15,7 @@ require (
 	github.com/gomodule/redigo v1.8.2 // indirect
 	github.com/lib/pq v1.0.0
 	github.com/mediocregopher/radix/v3 v3.5.2
-	github.com/valyala/fasthttp v1.15.1
+	github.com/valyala/fasthttp v1.34.0
 	google.golang.org/grpc v1.32.0
 )
 
